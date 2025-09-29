@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MyRepublic - Promo Spesial (Bang Zul)</title>
+  <meta name="description" content="Promo MyRepublic — Full Fiber, Unlimited, Harga Flat 24 bulan. Chat Bang Zul untuk cek coverage." />
+  <style>
+    :root{
+      --purple:#6b2e83;
+      --purple-2:#7f3b9b;
+      --accent:#ff8c2b;
+      --muted:#6b6b6b;
+      --white:#ffffff;
+      --bg-start:#0f0326;
+      --bg-end:#4c1b66;
+      --card-radius:14px;
+      --maxw:1200px;
+      font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;color:#111;background:#f7f6fb}
+    .wrap{max-width:var(--maxw);margin:22px auto;padding:18px}
+    /* HERO */
+    .hero{
+      position:relative;border-radius:16px;overflow:hidden;
+      background:linear-gradient(180deg, rgba(16,6,44,0.85), rgba(43,16,57,0.75));
+      color:#fff;padding:40px 28px;display:flex;gap:24px;align-items:center;
+    }
+    .hero .hero-left{flex:1;min-width:300px;z-index:2}
+    .hero .kicker{display:inline-block;padding:6px 12px;background:rgba(255,255,255,0.08);border-radius:999px;font-weight:800;color:#fff;margin-bottom:14px}
+    .hero h1{margin:0;font-size:34px;line-height:1.02;font-weight:900}
+    .hero p{margin:12px 0 16px;color:rgba(255,255,255,0.92);font-size:16px}
+    .hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:12px;border:0;font-weight:800;cursor:pointer;text-decoration:none}
+    .btn-primary{background:var(--accent);color:#fff;box-shadow:0 8px 30px rgba(255,140,43,0.18)}
+    .btn-ghost{background:transparent;border:2px solid rgba(255,255,255,0.14);color:#fff}
+    .hero .note{margin-top:12px;font-size:13px;color:rgba(255,255,255,0.85)}
+    .hero .hero-right{width:420px;flex-shrink:0;display:flex;align-items:center;justify-content:center}
+    .hero .hero-bg{position:absolute;inset:0;opacity:0.18;object-fit:cover}
+    /* PACKAGES */
+    .section{margin-top:20px;padding:20px;background:var(--white);border-radius:12px;box-shadow:0 10px 30px rgba(16,24,40,0.06)}
+    .section h2{margin:0 0 8px;color:var(--purple);font-size:20px}
+    .packages{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;margin-top:12px}
+    .pkg{display:flex;gap:12px;align-items:center;padding:12px;border-radius:12px;background:linear-gradient(180deg,#fff,#faf8ff);box-shadow:0 8px 24px rgba(16,24,40,0.04);transition:transform .18s ease}
+    .pkg:hover{transform:translateY(-6px)}
+    .pkg img{width:110px;height:76px;border-radius:10px;object-fit:cover;flex-shrink:0}
+    .pkg .meta{flex:1}
+    .pkg .meta .title{font-weight:900;color:var(--purple)}
+    .pkg .meta .speed{color:var(--muted);font-size:13px;margin-top:6px}
+    .pkg .price{text-align:right;min-width:120px}
+    .pkg .price .amount{font-weight:900;font-size:18px;color:#111}
+    .badge{display:inline-block;background:#f3f0ff;color:var(--purple);padding:6px 8px;border-radius:8px;font-weight:800;font-size:12px}
+    /* FEATURES + INFO */
+    .two-col{display:grid;grid-template-columns:2fr 1fr;gap:12px;align-items:start}
+    .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:12px}
+    .info{background:linear-gradient(180deg,#fff,#fff);padding:12px;border-radius:12px;box-shadow:0 8px 20px rgba(16,24,40,0.04)}
+    /* AWARDS / CERTS */
+    .awards{display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;padding:18px}
+    .awards img{max-width:100%;height:auto;border-radius:10px;box-shadow:0 8px 24px rgba(16,24,40,0.06)}
+    /* CTA FOOTER */
+    .final-cta{margin-top:18px;padding:20px;border-radius:12px;background:linear-gradient(90deg,var(--purple),var(--purple-2));color:#fff;display:flex;justify-content:space-between;align-items:center;gap:12px}
+    .final-cta .left{max-width:70%}
+    .final-cta h3{margin:0;font-size:20px}
+    .final-cta p{margin:6px 0 0;color:rgba(255,255,255,0.95)}
+    .final-cta .right{display:flex;gap:12px;align-items:center}
+    .small{font-size:13px;color:var(--muted)}
+    footer{margin-top:12px;text-align:center;color:var(--muted);font-size:13px}
+    @media(max-width:860px){
+      .hero{flex-direction:column;align-items:flex-start}
+      .hero .hero-right{width:100%}
+      .two-col{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero Promo">
+      <!-- background image (award) -->
+      <img class="hero-bg" src="award-ookla.jpg" alt="Ookla Awards 2025 - Best Fixed Network" loading="lazy">
+      <div class="hero-left" role="region" aria-label="Intro">
+        <div class="kicker">INDONESIA'S AWARD WINNER</div>
+        <h1>WiFi Terbaik untuk Roketin Harimu 🚀</h1>
+        <p>MyRepublic — Full Fiber Optic, Unlimited tanpa FUP, dan kecepatan simetris 1:1. Harga flat 24 bulan & gratis instalasi. Pilih paket sesuai kebutuhanmu: dari 50 Mbps sampai 500 Mbps.</p>
+
+        <div class="cta">
+          <a class="btn btn-primary" href="https://wa.me/6285822825372?text=Halo%20Bang%20Zul,%20saya%20tertarik%20paket%20MyRepublic%20-%20mau%20cek%20coverage" target="_blank" rel="noopener">💬 Chat Bang Zul (085822825372)</a>
+          <a class="btn btn-ghost" href="#packages">📦 Lihat Paket</a>
+        </div>
+
+        <div class="note" style="margin-top:12px">Gratis instalasi • Harga sudah termasuk PPN • Harga flat 24 bulan</div>
+      </div>
+
+      <div class="hero-right" aria-hidden="true">
+        <!-- small promo card (overlay) -->
+        <div style="background:rgba(255,255,255,0.08);padding:14px;border-radius:12px;text-align:center;backdrop-filter: blur(6px)">
+          <div style="font-size:13px;color:rgba(255,255,255,0.9);font-weight:700">Paket Populer</div>
+          <div style="font-weight:900;font-size:20px;margin-top:6px">MyGamer • 350 Mbps</div>
+          <div style="margin-top:8px;font-size:14px">Rp 444.000 / bln</div>
+          <a class="btn btn-primary" href="https://wa.me/6285822825372?text=Halo%20Bang%20Zul,%20saya%20mau%20paket%20MyGamer" style="margin-top:12px;display:inline-flex" target="_blank">Pilih & Chat</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACKAGES -->
+    <section id="packages" class="section" aria-label="Daftar Paket">
+      <h2>Pilih Paket Internet</h2>
+      <div class="packages">
+        <!-- Value -->
+        <div class="pkg" role="article" aria-label="Value 50Mbps">
+          <img src="promo-prices.jpg" alt="Value 50 Mbps" loading="lazy">
+          <div class="meta">
+            <div class="title">Value</div>
+            <div class="speed">50 Mbps — cocok keluarga kecil</div>
+            <div class="small" style="margin-top:6px;color:var(--muted)">Free Upgrade 3 Bulan</div>
+          </div>
+          <div class="price">
+            <div class="amount">Rp 260.850 / bln</div>
+            <div style="margin-top:6px"><a class="btn btn-primary" href="https://wa.me/6285822825372?text=Halo%20Bang%20Zul,%20saya%20ambil%20paket%20Value%2050Mbps" target="_blank">Chat</a></div>
+          </div>
+        </div>
+
+        <!-- Fast -->
+        <div class="pkg" role="article" aria-label="Fast 100Mbps">
+          <img src="promo-prices.jpg" alt="Fast 100 Mbps" loading="lazy">
+          <div class="meta">
+            <div class="title">Fast</div>
+            <div class="speed">100 Mbps — streaming HD & WFH</div>
+            <div class="small" style="margin-top:6px;color:var(--muted)">Free Upgrade 3 Bulan</div>
+          </div>
+          <div class="price">
+            <div class="amount">Rp 277.500 / bln</div>
+            <div style="margin-top:6px"><a class="btn btn-primary" href="https://wa.me/6285822825372?text=Halo%20Bang%20Zul,%20saya%20ambil%20paket%20Fast%20100Mbps" target="_blank">Chat</a></div>
+          </div>
+        </div>
+
+        <!-- Nova -->
+        <div class="pkg" role="article" aria-label="Nova 200Mbps">
+          <img src="promo-prices.jpg" alt="Nova 200 Mbps" loading="lazy">
+          <div class="meta">
+            <div class="title">Nova</div>
+            <div class="speed">200 Mbps — multi-device & 4K streaming</div>
+            <div class="small" style="margin-top:6px;color:var(--muted)"><span class="badge">Free Vidio Platinum</span></div>
+          </div>
+          <div class="price">
+            <div class="amount">Rp 333.000 / bln</div>
+            <div style="margin-top:6px"><a class="btn btn-primary" href="https://wa.me/6285822825372?text=Halo%20Bang%20Zul,%20saya%20ambil%20paket%20Nova%20200Mbps" target="_blank">Chat</a></div>
+          </div>
+        </div>
+
+        <!-- MyGamer -->
+        <div class="pkg" role="article" aria-label="MyGamer 350Mbps">
+          <img src="promo-prices.jpg" alt="MyGamer 350 Mbps" loading="lazy">
+          <div class="meta">
+            <div class="title">MyGamer</div>
+            <div class="speed">350 Mbps — low-latency untuk gamer</div>
+            <div class="small" style="margin-top:6px;color:var(--muted)"><span class="badge">Free Vidio Platinum</span></div>
+          </div>
+          <div class="price">
+            <div class="amount">Rp 444.000 / bln</div>
+            <div style="margin-top:6px"><a class="btn btn-primary" href="https://wa.me/6285822825372?text=Halo%20Bang%20Zul,%20saya%20ambil%20paket%20MyGamer%20350Mbps" target="_blank">Chat</a></div>
+          </div>
+        </div>
+
+        <!-- Prime -->
+        <div class="pkg" role="article" aria-label="Prime 500Mbps">
+          <img src="promo-prices.jpg" alt="Prime 500 Mbps" loading="lazy">
+          <div class="meta">
+            <div class="title">Prime</div>
+            <div class="speed">500 Mbps — keluarga besar & office kecil</div>
+            <div class="small" style="margin-top:6px;color:var(--muted)"><span class="badge">Free Vidio Platinum</span></div>
+          </div>
+          <div class="price">
+            <div class="amount">Rp 555.000 / bln</div>
+            <div style="margin-top:6px"><a class="btn btn-primary" href="https://wa.me/6285822825372?text=Halo%20Bang%20Zul,%20saya%20ambil%20paket%20Prime%20500Mbps" target="_blank">Chat</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES + INFO -->
+    <section class="section" aria-label="Keunggulan & Info">
+      <div class="two-col">
+        <div>
+          <h2>Keunggulan MyRepublic</h2>
+          <div class="info-grid">
+            <div class="info"><strong>⚡ Full Fiber Optic</strong><div class="small" style="margin-top:6px">Koneksi lebih stabil & konsisten meski cuaca ekstrem.</div></div>
+            <div class="info"><strong>🔁 Simetris 1:1</strong><div class="small" style="margin-top:6px">Upload sama cepat dengan download — penting untuk live streaming & cloud upload.</div></div>
+            <div class="info"><strong>♾️ Unlimited</strong><div class="small" style="margin-top:6px">Tanpa FUP — nikmati streaming & gaming tanpa khawatir kuota.</div></div>
+            <div class="info"><strong>🎮 Optimal untuk Gamer</strong><div class="small" style="margin-top:6px">Low latency & stabil untuk pengalaman kompetitif.</div></div>
+          </div>
+        </div>
+
+        <aside>
+          <h2>Infografis Teknologi</h2>
+          <div style="margin-top:12px" class="awards">
+            <img src="infografis-technology.jpg" alt="Teknologi MyRepublic - FTTH, jangkauan wifi" loading="lazy">
+            <div class="small" style="margin-top:8px">Saran: upload versi PNG/JPG resolusi tinggi (min 1200×800) supaya tampilan jelas di desktop & mobile.</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- AWARDS / CERTS -->
+    <section class="section" aria-label="Penghargaan & Sertifikasi">
+      <h2>Penghargaan & Sertifikasi</h2>
+      <div style="margin-top:12px" class="awards">
+        <img src="certs-iso.jpg" alt="Penghargaan & sertifikasi MyRepublic" loading="lazy">
+        <div class="small" style="margin-top:8px">Ookla Speedtest Awards • ISO 9001, ISO 27001 • dan penghargaan nasional lainnya</div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta" role="region" aria-label="Call to action akhir">
+      <div class="left">
+        <h3>Langganan Sekarang — Mulai dari Rp260.850 / bln</h3>
+        <p>Gratis instalasi & harga flat selama 24 bulan. Chat Bang Zul sekarang untuk cek coverage dan dapatkan penawaran terbaik.</p>
+      </div>
+      <div class="right">
+        <a class="btn btn-primary" href="https://wa.me/6285822825372?text=Halo%20Bang%20Zul,%20saya%20mau%20daftar%20paket%20MyRepublic" target="_blank">💬 Chat Bang Zul (085822825372)</a>
+      </div>
+    </section>
+
+    <footer>
+      <div style="margin-top:14px">© 2025 MyRepublic Indonesia — Member of Sinarmas • S&K berlaku • Harga sudah termasuk PPN</div>
+    </footer>
+  </div>
+
+  <!-- Optional: small script to check images exist and warn (for dev convenience) -->
+  <script>
+    (function(){
+      const WA_NUMBER = "6285822825372"; // nomor international (tanpa +)
+      const imgs = [
+        {src:'award-ookla.jpg', name:'Hero - award-ookla.jpg'},
+        {src:'infografis-technology.jpg', name:'Infografis - infografis-technology.jpg'},
+        {src:'promo-prices.jpg', name:'Promo - promo-prices.jpg'},
+        {src:'certs-iso.jpg', name:'Penghargaan - certs-iso.jpg'}
+      ];
+      imgs.forEach(i=>{
+        const img = new Image();
+        img.src = i.src;
+        img.onerror = ()=>console.warn('Image not found:', i.name, ' — upload/replace file or update src in HTML.');
+      });
+
+      // small helper if you want to open WA programmatically:
+      window.openWhatsApp = function(prefill){
+        const msg = encodeURIComponent(prefill || 'Halo Bang Zul, saya mau tanya paket MyRepublic.');
+        window.open(`https://wa.me/${WA_NUMBER}?text=${msg}`, '_blank');
+      };
+    })();
+  </script>
+</body>
+</html>
